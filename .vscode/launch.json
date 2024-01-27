@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch npm lint",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+          "run", "lint"
+      ],
+  },
+  {
+    "name": "Launch npm",
+    "type": "node",
+    "request": "launch",
+    "cwd": "${workspaceRoot}",
+    "runtimeExecutable": "npm",
+    "runtimeArgs": [
+        "run", "start"
+    ],
+    "port": 5858
+  }, 
+  {
+    "name": "Attach to broswer",
+    "type": "chrome",
+    "request": "launch",
+    "url": "http://localhost:3000",
+  }
+  ]
+}

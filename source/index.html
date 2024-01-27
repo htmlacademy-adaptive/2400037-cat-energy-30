@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>CAT ENERGY</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -14,8 +18,15 @@
         <nav class="nav nav--close">
           <button class="nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <a class="logo" href="#">
-            <img class="logo__img" src="./images/logo-cat.svg" width="33" height="38" alt="Логотип с котом.">
-            <img class="logo__text" src="./images/logo.svg" width="101" height="18" alt="Логотип с текстом Cat Energy.">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+              <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип с котом.">
+            </picture>
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21">
+              <img class="logo__img" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
+            </picture>
           </a>
           <ul class="nav__list menu">
             <li class="menu__item">
@@ -32,8 +43,13 @@
       </div>
       <section class="promo">
         <div class="promo__container container">
-          <h2 class="promo__title">Функциональное<br>питание для котов</h2>
+          <h2 class="promo__title">Функциональное питание для котов</h2>
           <p class="promo__description">Занялся собой? Займись котом!</p>
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x" width="552" height="499">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x" width="709" height="609">
+            <img class="promo__img" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка питания для котов со вкусом курицы.">
+          </picture>
           <a class="promo__button button" href="form.html">Подобрать программу</a>
         </div>
       </section>
@@ -98,6 +114,14 @@
 
           <div class="comparison">
             <div class="comparison__wrapper-img">
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="images/before-tablet@1x.png 1x, images/before-tablet@2x.png 2x" width="560" height="512">
+                <img class="comparison__img comparison__img--before comparison__img--current" src="images/before-mobile@1x.png" srcset="images/before-mobile@2x.png 2x" width="280" height="256" alt="Толстый пушистый кот до похудения">
+              </picture>
+              <picture>
+                <source type="image/png" media="(min-width: 768px)" srcset="images/after-tablet@1x.png 1x, images/after-tablet@2x.png 2x" width="560" height="512">
+                <img class="comparison__img comparison__img--after" src="images/after-tablet@1x.png" srcset="images/after-mobile@2x.png 2x" width="280" height="256" alt="Стройный гладкошёрстный кот после похудения">
+              </picture>
             </div>
             <div class="comparison__control controls">
               <button class="controls__button" type="button">Было</button>
@@ -128,7 +152,7 @@
       <div class="page-footer__container container">
         <div class="page-footer__logo">
           <a class="footer-logo" href="index.html">
-            <img class="footer-logo__icon" src="./images/logo.svg" width="128" height="24" alt="Логотип с текстом Cat Energy.">
+            <img class="footer-logo__icon" src="images/logo-text.svg" width="128" height="24" alt="Логотип с текстом Cat Energy.">
           </a>
         </div>
 
@@ -162,7 +186,9 @@
         </div>
 
         <div class="page-footer__academy academy">
-          <a class="academy__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          <a class="academy__link" href="https://htmlacademy.ru/">HTML Academy
+            <img class="academy__icon" src="images/icons/logo-html.svg" alt="Логотип Академии." width="27" height="34">
+          </a>
         </div>
       </div>
     </footer>
