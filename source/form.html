@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>CAT ENERGY подбор программы</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -14,8 +18,15 @@
         <nav class="nav nav--close">
           <button class="nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <a class="logo" href="#">
-            <img class="logo__img" src="./images/logo-cat.svg" width="33" height="38" alt="Логотип с котом.">
-            <img class="logo__text" src="./images/logo.svg" width="101" height="18" alt="Логотип с текстом Cat Energy.">
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+              <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип с котом.">
+            </picture>
+            <picture>
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21">
+              <img class="logo__img" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
+            </picture>
           </a>
           <ul class="nav__list menu">
             <li class="menu__item">
@@ -159,7 +170,7 @@
       <div class="page-footer__container container">
         <div class="page-footer__logo">
           <a class="footer-logo" href="index.html">
-            <img class="footer-logo__icon" src="./images/logo.svg" width="128" height="24" alt="Логотип с текстом Cat Energy.">
+            <img class="footer-logo__icon" src="images/logo-text.svg" width="128" height="24" alt="Логотип с текстом Cat Energy.">
           </a>
         </div>
 
@@ -193,7 +204,9 @@
         </div>
 
         <div class="page-footer__academy academy">
-          <a class="academy__link" href="https://htmlacademy.ru/">HTML Academy</a>
+          <a class="academy__link" href="https://htmlacademy.ru/">HTML Academy
+            <img class="academy__icon" src="images/icons/logo-html.svg" alt="Логотип Академии." width="27" height="34">
+          </a>
         </div>
       </div>
     </footer>
