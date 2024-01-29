@@ -72,22 +72,22 @@
 }
 
 .step-list__item:nth-child(1)::before {
-  background-image: url("../../images/icons/icon-leaf.svg");
+  background-image: url("../../images/icons/stack.svg#icon-leaf");
   background-size: 30px 32px;
 }
 
 .step-list__item:nth-child(2)::before {
-  background-image: url("../../images/icons/icon-tub.svg");
+  background-image: url("../../images/icons/stack.svg#icon-tub");
   background-size: 25px 28px;
 }
 
 .step-list__item:nth-child(3)::before {
-  background-image: url("../../images/icons/icon-eat.svg");
+  background-image: url("../../images/icons/stack.svg#icon-eat");
   background-size: 25px 30px;
 }
 
 .step-list__item:nth-child(4)::before {
-  background-image: url("../../images/icons/icon-alarm.svg");
+  background-image: url("../../images/icons/stack.svg#icon-alarm");
   background-size: 26px 31px;
 }
 
