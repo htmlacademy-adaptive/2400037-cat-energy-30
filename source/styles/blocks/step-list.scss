@@ -1,5 +1,6 @@
 .step-list {
   counter-reset: section;
+
   @include list;
 
   @media (min-width: $tablet) {
@@ -61,7 +62,7 @@
       content: counter(section);
       position: absolute;
       right: 0;
-      font-family: $primary-font;;
+      font-family: $primary-font;
       font-size: 280px;
       line-height: 280px;
       color: $color-grey;
