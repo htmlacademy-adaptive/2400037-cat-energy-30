@@ -1,9 +1,81 @@
-.present__text {
-  color: $color-white;
-  font-size: 16px;
-  line-height: 20px;
+.present {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35px;
+  padding: 58px 58px 43px;
+  background-image: url("../../images/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/gift-photo-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 76px;
+    padding: 57px 78px 60px;
+    background-image: url("../../images/gift-photo-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/gift-photo-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+    padding: 56px 42px 42px;
+    margin-bottom: 86px;
+    background-image: url("../../images/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/gift-photo-desktop@2x.jpg");
+    }
+  }
 }
 
-.present {
-  background: $color-basic-green;
+.present::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-size: 100% auto;
+  background-color: rgba($color-basic-green, 0.85);
+  z-index: 2;
+}
+
+.present__icon {
+  fill: $color-white;
+  margin-bottom: 48px;
+  z-index: 3;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+    width: 80px;
+    height: 83px;
+  }
+}
+
+.present__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-white;
+  text-align: center;
+  z-index: 3;
+
+  @media (min-width: $tablet) {
+    padding-right: 43px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 0;
+    text-align: center;
+  }
 }

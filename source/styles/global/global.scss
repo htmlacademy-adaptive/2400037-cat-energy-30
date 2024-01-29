@@ -2,10 +2,19 @@ body {
   font-family: $primary-font;
   font-size: 14px;
   line-height: 18px;
-  color: #000000;
+  color: $color-black;
   background-color: #ffffff;
   margin: 0;
   padding: 0;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-width: 320px;
+  min-height: 100%;
+}
+
+.page {
+  height: 100%;
 }
 
 .visually-hidden {
