@@ -1,0 +1,208 @@
+.more-product {
+  overflow: hidden;
+}
+
+.more-product__container {
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.more-product__title {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 36px;
+  padding-top: 25px;
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 80px;
+    padding-top: 68px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop) {
+    position: relative;
+    display: inline-flex;
+    margin-bottom: 80px;
+    margin-left: -40px;
+    padding-top: 76px;
+    padding-right: 35px;
+    padding-left: 40px;
+    background-color: $color-white;
+  }
+
+  &::after {
+    content: "";
+    margin-top: 8px;
+    margin-right: -20px;
+    margin-left: 22px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: 2px;
+    background-color: $color-basic-green;
+
+    @media (min-width: $tablet) {
+      margin-right: -30px;
+      margin-left: 35px;
+    }
+
+    @media (min-width: $desktop) {
+      position: absolute;
+      top: 99px;
+      right: 0;
+      margin: 0;
+      width: 100vw;
+      z-index: -1;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet) {
+      content: "";
+      margin-top: 8px;
+      margin-right: 37px;
+      margin-left: -30px;
+      width: 30px;
+      height: 2px;
+      background-color: $color-basic-green;
+    }
+
+    @media (min-width: $desktop) {
+      position: absolute;
+      top: 99px;
+      left: 0;
+      margin: 0;
+      width: 100vw;
+      z-index: -1;
+    }
+  }
+}
+
+.more-product__list {
+  @include list;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 86px;
+    margin-right: 79px;
+    min-width: 896px;
+  }
+}
+
+.more-product__item {
+  padding-top: 13px;
+  padding-bottom: 18px;
+  border-top: 1px solid $color-result-border;
+
+  @media (min-width: $tablet) {
+    padding: 26px 38px 28px;
+    border-left: 1px solid $color-result-border;
+    border-right: 1px solid $color-result-border;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 0 16px;
+    border-left: none;
+    border-right: none;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $color-result-border;
+  }
+}
+
+.more-product__inner {
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-grow: 1;
+    margin-right: 38px;
+    margin-bottom: 0;
+  }
+}
+
+.more-product__caption {
+  margin-top: 0;
+  margin-bottom: 13px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $color-special-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.more-product__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    flex-basis: 288px;
+    padding-top: 5px;
+  }
+}
+
+.more-product__pack,
+.more-product__price {
+  margin: 0;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-special-dark-grey;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.more-product__pack {
+  @media (min-width: $tablet) {
+    margin-right: 49px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: auto;
+  }
+}
+
+.more-product__btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $desktop) {
+    min-width: 244px;
+  }
+}

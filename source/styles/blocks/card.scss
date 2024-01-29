@@ -1,0 +1,70 @@
+.card__title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-special-black;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &--yet {
+    margin-bottom: 8px;
+
+    @media (min-width: $tablet) {
+      margin: 0 auto;
+      margin-bottom: 20px;
+      width: 134px;
+    }
+  }
+}
+
+.card__button {
+  margin-bottom: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 40px;
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+  }
+
+  &--yet {
+    color: $color-special-dark-grey;
+    background-color: $color-grey;
+
+    &:hover,
+    &:focus {
+      background-color: $color-grey-border;
+    }
+
+    &:active {
+      color: rgba($color-special-dark-grey, 0.3);
+    }
+  }
+}
+
+.card__text {
+  margin-top: 0;
+  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-special-dark-grey;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    margin-bottom: 85px;
+    width: 167px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+}

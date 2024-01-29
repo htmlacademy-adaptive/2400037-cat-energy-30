@@ -1,0 +1,31 @@
+.address__text {
+  width: 140px;
+  line-height: 20px;
+  color: $color-special-dark-grey;
+  text-decoration: none;
+  font-style: normal;
+
+  @media (min-width: $tablet) {
+    width: 160px;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
+}
+
+.address__text-wrap {
+  @media (min-width: $tablet) {
+    display: inline-block;
+    margin-bottom: 19px;
+  }
+}
+
+.address__title {
+  font-family: $secondary-font;
+  color: $color-address-text;
+  font-size: 16px;
+  text-transform: uppercase;
+}
