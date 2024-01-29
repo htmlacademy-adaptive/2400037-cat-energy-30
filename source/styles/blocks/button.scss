@@ -21,6 +21,6 @@
 
   &:active {
     background-color: $color-basic-green-hover;
-    color: fadeout($color-white, 70%);
+    color: rgba($color-white, 0.3);
   }
 }

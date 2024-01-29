@@ -47,7 +47,7 @@
     }
 
     &:active {
-      color: fadeout($color-special-dark-grey, 70%);
+      color: rgba($color-special-dark-grey, 0.3);
     }
   }
 }
