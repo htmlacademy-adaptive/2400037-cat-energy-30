@@ -1,0 +1,14 @@
+.promo {
+  background: $color-basic-green;
+  color: $color-white;
+}
+
+.promo__title {
+  line-height: 36px;
+}
+
+.promo__description {
+  font-family: $secondary-font;
+  line-height: 14px;
+  text-transform: uppercase;
+}

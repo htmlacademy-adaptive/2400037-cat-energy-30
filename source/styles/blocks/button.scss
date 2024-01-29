@@ -1,0 +1,26 @@
+.button {
+  font-family: $secondary-font;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $color-basic-green;
+  color: $color-white;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--yet {
+    background-color: $color-grey;
+    color: $color-special-dark-grey;
+  }
+  &:hover,
+  &:focus {
+    background-color: $color-basic-green-hover;
+  }
+
+  &:active {
+    background-color: $color-basic-green-hover;
+    color: fadeout($color-white, 70%);
+  }
+}
