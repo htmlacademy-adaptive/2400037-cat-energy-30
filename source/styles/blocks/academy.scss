@@ -1,5 +1,24 @@
 .academy__link {
-  color: $color-special-dark-grey;
+  font-family: $primary-font;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
   font-size: 16px;
   line-height: 20px;
+  color: $color-special-dark-grey;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.academy__icon {
+  fill: $color-grey-footer;
+}
+
+.academy__link:hover .academy__icon,
+.academy__link:focus .academy__icon {
+  fill: transparent;
+  stroke: $color-basic-green;
 }

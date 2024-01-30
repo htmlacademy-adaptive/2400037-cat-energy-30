@@ -1,5 +1,7 @@
 .address__text {
   width: 140px;
+  font-family: $primary-font;
+  font-size: 14px;
   line-height: 20px;
   color: $color-special-dark-grey;
   text-decoration: none;
@@ -27,5 +29,30 @@
   font-family: $secondary-font;
   color: $color-address-text;
   font-size: 16px;
+  line-height: 20px;
   text-transform: uppercase;
+}
+
+.address {
+  padding-top: 28px;
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    padding-top: 62px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: $color-white;
+  }
+}
+
+.address__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet) {
+    padding: 0 70px;
+  }
 }

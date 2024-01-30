@@ -1,0 +1,19 @@
+.wrapper {
+  @media screen and (min-width: $tablet) {
+    padding: 0 70px;
+  }
+
+  &--text-group {
+    @media (min-width: $desktop) {
+      padding-right: 0;
+      padding-left: 110px;
+    }
+  }
+
+  &--checkbox-group {
+    @media (min-width: $desktop) {
+      padding-left: 0;
+      padding-right: 110px;
+    }
+  }
+}

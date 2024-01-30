@@ -1,3 +1,28 @@
+.works {
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+    padding-bottom: 46px;
+    border-bottom: 1px solid $color-border-menu;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 11px;
+    border-bottom: none;
+  }
+}
+
 .works__title {
+  margin-top: 0;
+  margin-bottom: 38px;
+  font-family: $secondary-font;
+  font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 32px;
+  }
 }

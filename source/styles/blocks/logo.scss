@@ -1,0 +1,44 @@
+.logo {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 0;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.logo__img {
+  margin-right: 52px;
+  width: 34px;
+  height: 38px;
+
+  @media (min-width: $tablet) {
+    margin-right: 0;
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.logo__text {
+  width: 101px;
+  height: 18px;
+  vertical-align: super;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
