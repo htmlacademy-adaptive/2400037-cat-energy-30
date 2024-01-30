@@ -117,33 +117,6 @@
   flex-grow: 1;
 }
 
-.card__title {
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  color: $color-special-black;
-  text-transform: uppercase;
-
-  @media (min-width: $tablet) {
-    margin-bottom: 16px;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-  }
-
-  &--yet {
-    margin-bottom: 8px;
-
-    @media (min-width: $tablet) {
-      margin: 0 auto;
-      margin-bottom: 20px;
-      width: 134px;
-    }
-  }
-}
-
 .card__icon-plus {
   margin-bottom: 23px;
   width: 23px;
