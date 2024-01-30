@@ -5,27 +5,29 @@
     <title>CAT ENERGY</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preload" href="fonts/lato/Lato-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="page-header page-header--index page-header--index-after page-header--index-tablet page-header--index-tableta page-header--index-mob">
+    <header class="page-header page-header--border">
       <div class="container">
         <h1 class="visually-hidden">Интернет-магазин питания для кошечек Кэт энерджи</h1>
         <nav class="nav nav--close nav--no-js">
           <button class="nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <a class="logo" href="#">
             <picture>
-              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
-              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="202" height="59">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174" height="50">
               <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип с котом.">
             </picture>
             <picture>
               <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21">
-              <img class="logo__img" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
+              <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
             </picture>
           </a>
           <ul class="nav__list menu">
@@ -280,9 +282,8 @@
           </li>
           <li class="catalog__item card">
             <div class="card__wrap">
-              <svg xmlns="http://www.w3.org/2000/svg" width="61" height="61" viewBox="0 0 61 61" fill="none">
-                <line x1="31.5" y1="0.5" x2="31.5" y2="60.5" stroke="#D3D3D3" stroke-width="2"/>
-                <line x1="60.5" y1="31.5" x2="0.5" y2="31.5" stroke="#D3D3D3" stroke-width="2"/>
+              <svg class="card__icon-plus" width="30" height="30" role="img">
+                <use href="images/icons/stack.svg#plus"></use>
               </svg>
               <h2 class="card__title card__title--yet">Показать еще 100500 товаров</h2>
               <p class="card__text">На самом деле вкусов гораздо больше!</p>
@@ -353,7 +354,7 @@
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper contacts__wrapper--grey-theme">
           <div class="contacts__address address">
             <div class="address__container container">
               <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>

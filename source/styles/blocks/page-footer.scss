@@ -1,3 +1,56 @@
 .page-footer {
   background-color: $color-grey;
 }
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    padding-top: 21px;
+    padding-bottom: 29px;
+  }
+}
+
+.page-footer__logo {
+  padding-top: 39px;
+  padding-bottom: 27px;
+
+  @media (min-width: $desktop) {
+    padding-top: 42px;
+  }
+}
+
+.page-footer__social {
+  padding-top: 20px;
+  padding-bottom: 16px;
+  width: 100%;
+  border-top: 1px solid $color-lighten-grey;
+  border-bottom: 1px solid $color-lighten-grey;
+
+  @media (min-width: $tablet) {
+    border: none;
+    width: auto;
+    margin-left: 24px;
+    padding-top: 24px;
+  }
+}
+
+.page-footer__academy {
+  width: 100%;
+  padding: 22px 0;
+
+  @media (min-width: $tablet) {
+    padding-top: 26px;
+    width: 165px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 34px;
+    width: 163px;
+  }
+}

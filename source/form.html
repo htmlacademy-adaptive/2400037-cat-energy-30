@@ -5,27 +5,29 @@
     <title>CAT ENERGY подбор программы</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicon/180.png">
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preload" href="fonts/lato/Lato-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="page-header page-header--index page-header--index-after page-header--index-tablet page-header--index-tableta page-header--index-mob">
+    <header class="page-header page-header--border">
       <div class="container">
         <h1 class="visually-hidden">Интернет-магазин питания для кошечек Кэт энерджи</h1>
         <nav class="nav nav--close nav--no-js">
           <button class="nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <a class="logo" href="#">
             <picture>
-              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
-              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+              <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="202" height="59">
+              <source type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg" width="174" height="50">
               <img class="logo__img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип с котом.">
             </picture>
             <picture>
               <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text.svg" width="118" height="21">
-              <img class="logo__img" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
+              <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
             </picture>
           </a>
           <ul class="nav__list menu">
@@ -92,7 +94,7 @@
         </fieldset>
 
         <fieldset class="form__fieldset">
-          <legend class="form__legend form__legend--contact">Контактные данные (владельца кота)</legend>
+          <legend class="form__legend form__legend--contact">Контактные данные<br> (владельца кота)</legend>
           <div class="container wrapper">
             <ul class="form__list form__list--contact">
               <li class="form__item form__item--email">

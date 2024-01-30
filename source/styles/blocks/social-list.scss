@@ -1,0 +1,27 @@
+.social-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  margin: 0 auto;
+}
+
+.social-list__link {
+  display: block;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social-list__icon {
+  fill: $color-grey-footer;
+
+  &:hover,
+  &:focus {
+    fill: transparent;
+    stroke: $color-basic-green;
+  }
+}

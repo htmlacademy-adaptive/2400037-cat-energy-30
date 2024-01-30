@@ -93,6 +93,9 @@
 
 .step-list__text {
   margin: 0;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet) {
     margin-bottom: 57px;
