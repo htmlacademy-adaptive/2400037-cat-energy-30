@@ -92,7 +92,7 @@
   }
 }
 
-.nav--close .nav__container {
+.nav__container--close {
   @media (max-width: $mobile-only) {
     display: none;
   }
