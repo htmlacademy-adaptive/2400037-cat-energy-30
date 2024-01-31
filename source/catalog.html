@@ -9,8 +9,6 @@
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preload" href="fonts/lato/Lato-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswald/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
@@ -30,17 +28,19 @@
               <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
             </picture>
           </a>
-          <ul class="nav__list menu">
-            <li class="menu__item">
-              <a class="menu__link" href="index.html">Главная</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link menu__link--current" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
+          <div class="nav__container nav--close">
+            <ul class="nav__list menu">
+              <li class="menu__item">
+                <a class="menu__link" href="index.html">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--current" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -285,7 +285,7 @@
               <svg class="card__icon-plus" width="30" height="30" role="img">
                 <use href="images/icons/stack.svg#plus"></use>
               </svg>
-              <h2 class="card__title card__title--yet">Показать еще 100500 товаров</h2>
+              <h2 class="card__title--yet">Показать еще 100500 товаров</h2>
               <p class="card__text">На самом деле вкусов гораздо больше!</p>
               <a class="card__button card__button--yet button" href="#">Показать все</a>
             </div>
@@ -357,12 +357,14 @@
         <div class="contacts__wrapper contacts__wrapper--grey-theme">
           <div class="contacts__address address">
             <div class="address__container container">
-              <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
-              <address class="address__text"><span class="address__text-wrap">ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</address>
+              <p class="address__title">Приглашаем <br> к сотрудничеству<br> дилеров!</p>
+              <address class="address__text"><span class="address__text-wrap">ул. Большая<br> Конюшенная, д. 19/8</span> Санкт-Петербург</address>
             </div>
           </div>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <div class="map-google"></div>
+        </div>
       </section>
     </main>
 

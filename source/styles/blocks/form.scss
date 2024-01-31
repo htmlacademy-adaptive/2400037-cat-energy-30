@@ -92,10 +92,13 @@
 .form__item {
   display: flex;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 20px;
+    margin-bottom: 31px;
+  }
+  @media (min-width: $desktop) {
+    margin-bottom: 22px;
   }
 
   &:last-child {
@@ -116,7 +119,7 @@
     margin-bottom: 14px;
 
     @media (min-width: $tablet) {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     @media (min-width: $desktop) {
@@ -175,9 +178,13 @@
 .form__input-email,
 .form__input-tel {
   padding: 12px 15px 13px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 18px;
   flex-grow: 1;
   border: 1px solid $color-grey-form;
   text-transform: uppercase;
+  width: 50px;
 
   @media (min-width: $tablet) {
     padding: 12px 18px 14px;
@@ -348,7 +355,7 @@
     margin-bottom: 35px;
 
     @media (min-width: $tablet) {
-      padding-top: 71px;
+      padding-top: 66px;
       margin-bottom: 76px;
     }
 
@@ -359,12 +366,12 @@
   }
 
   &--comment {
-    padding-top: 24px;
+    padding-top: 30px;
     margin-bottom: 38px;
 
     @media (min-width: $tablet) {
       padding-top: 65px;
-      margin-bottom: 76px;
+      margin-bottom: 90px;
     }
 
     @media (min-width: $desktop) {
@@ -383,7 +390,7 @@
     }
 
     @media (min-width: $desktop) {
-      padding-top: 62px;
+      padding-top: 71px;
       margin-bottom: 61px;
     }
   }
@@ -452,6 +459,7 @@
   padding: 9px 15px 9px 12px;
   width: 100%;
   min-height: 150px;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
   border: 1px solid $color-grey-form;
@@ -546,7 +554,7 @@
   }
 }
 
-.form__btn {
+.form__button {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 21px;

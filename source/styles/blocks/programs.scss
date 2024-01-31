@@ -154,11 +154,13 @@
 
   @media (min-width: $desktop) {
     margin-bottom: 23px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   &--slim {
     @media (min-width: $tablet) {
-      padding-right: 285px;
+      padding-right: 317px;
     }
 
     @media (min-width: $desktop) {

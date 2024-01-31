@@ -1,3 +1,8 @@
+.container-menu {
+  padding: 0;
+}
+
+
 .container {
   padding: 0 20px;
 
@@ -9,5 +14,24 @@
     max-width: 1220px;
     margin: 0 auto;
     padding: 0 110px;
+  }
+}
+
+.content-wrapper {
+  box-sizing: border-box;
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1300px;
+  padding-left: var(--content-padding-mobile);
+  padding-right: var(--content-padding-mobile);
+
+  @media (min-width: $tablet) {
+    padding-left: var(--content-padding-tablet);
+    padding-right: var(--content-padding-tablet);
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: var(--content-padding-desktop);
+    padding-right: var(--content-padding-desktop);
   }
 }

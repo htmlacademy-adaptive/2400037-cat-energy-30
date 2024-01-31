@@ -14,13 +14,14 @@
 }
 
 .works__title {
-  margin-top: 0;
-  margin-bottom: 38px;
+  margin-top: -5px;
+  margin-bottom: 36px;
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
 
   @media (min-width: $tablet) {
+    margin-top: 0;
     font-size: 60px;
     line-height: 60px;
     margin-bottom: 32px;

@@ -11,17 +11,23 @@
 
   @media (min-width: $tablet) {
     flex-direction: row;
-    padding-top: 21px;
+    padding-top: 4px;
+    padding-bottom: 29px;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+    padding-top: 43px;
     padding-bottom: 29px;
   }
 }
 
 .page-footer__logo {
   padding-top: 39px;
-  padding-bottom: 27px;
+  padding-bottom: 15px;
 
   @media (min-width: $desktop) {
-    padding-top: 42px;
+    padding-top: 25px;
   }
 }
 
@@ -35,7 +41,14 @@
   @media (min-width: $tablet) {
     border: none;
     width: auto;
-    margin-left: 24px;
+    margin-left: 37px;
+    padding-top: 35px;
+  }
+
+  @media (min-width: $desktop) {
+    border: none;
+    width: auto;
+    margin-left: 35px;
     padding-top: 24px;
   }
 }
@@ -45,7 +58,7 @@
   padding: 22px 0;
 
   @media (min-width: $tablet) {
-    padding-top: 26px;
+    padding-top: 30px;
     width: 165px;
   }
 

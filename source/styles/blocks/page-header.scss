@@ -1,5 +1,7 @@
 .page-header {
-  @include secodary-font;
+  font-family: "Oswald";
+  font-size: 20px;
+  line-height: 20px;
 
   &--border {
     @media (max-width: $mobile-only) {
