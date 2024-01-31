@@ -77,18 +77,18 @@
 
 .nav__list {
   @media (max-width: $mobile-only) {
-  display: flex;
-  width: 100%;
-  background-color: $color-white;
-  z-index: 4;
-  position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: $color-white;
+    z-index: 4;
+    position: absolute;
  }
 }
 
 .nav__container {
   @media (max-width: $mobile-only) {
-  margin: 0 -20px 0 -20px;
-  position: relative;
+    margin: 0 -20px 0 -20px;
+    position: relative;
   }
 }
 

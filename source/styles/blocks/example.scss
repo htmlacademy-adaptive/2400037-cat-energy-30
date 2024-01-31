@@ -162,7 +162,7 @@
       top: 0;
       height: 100%;
       width: calc(50vw - var(--content-width-tablet)/2);
-      left: calc((50vw - var(--content-width-tablet)/2) *-1);
+      left: calc((50vw - var(--content-width-tablet)/2) * -1);
       background-image: linear-gradient(180deg, $color-white 150px, $color-example-grey 150px);
     }
 
