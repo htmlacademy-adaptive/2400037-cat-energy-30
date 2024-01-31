@@ -155,7 +155,7 @@
 }
 
 .example__slider-images {
-  @media (min-width: $tablet) and (max-width: $desktop) {
+  @media (min-width: $tablet) and (max-width: 1439px) {
     &::before {
       content: "";
       position: absolute;

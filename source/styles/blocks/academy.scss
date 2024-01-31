@@ -14,11 +14,10 @@
 }
 
 .academy__icon {
-  fill: $color-grey-footer;
+  color: $color-grey-footer;
 }
 
 .academy__link:hover .academy__icon,
 .academy__link:focus .academy__icon {
-  fill: transparent;
-  stroke: $color-basic-green;
+  color: $color-basic-green;
 }
