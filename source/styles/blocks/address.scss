@@ -10,7 +10,9 @@
   @media (min-width: $tablet) {
     width: 160px;
     font-size: 16px;
+    line-height: 20px;
     text-align: right;
+    margin-top: -20px;
   }
 
   @media (min-width: $desktop) {
@@ -31,11 +33,22 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address {
-  padding-top: 28px;
-  padding-bottom: 26px;
+  padding-top: 12px;
+  padding-bottom: 9px;
 
   @media (min-width: $tablet) {
     padding-top: 62px;
@@ -44,6 +57,8 @@
 
   @media (min-width: $desktop) {
     background-color: $color-white;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -54,5 +69,9 @@
 
   @media (min-width: $tablet) {
     padding: 0 70px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 68px 80px 50px 80px;
   }
 }

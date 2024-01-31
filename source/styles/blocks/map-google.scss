@@ -1,0 +1,29 @@
+.map-google {
+  min-height: 362px;
+  background-image: url("../../images/location-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/location-mobile@2x.png");
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 400px;
+    background-image: url("../../images/location-tablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/location-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    min-height: 400px;
+    background-image: url("../../images/location-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/location-desktop@1x.png");
+    }
+  }
+}

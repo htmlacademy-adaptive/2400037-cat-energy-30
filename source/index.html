@@ -9,15 +9,13 @@
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="preload" href="fonts/lato/Lato-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswald/Oswald-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="page-header page-header--index">
       <div class="container">
         <h1 class="visually-hidden">Интернет-магазин питания для кошечек Кэт энерджи</h1>
-        <nav class="nav nav--close nav--no-js">
+        <nav class="nav nav--open nav--no-js">
           <button class="nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <a class="logo" href="#">
             <picture>
@@ -30,17 +28,19 @@
               <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
             </picture>
           </a>
-          <ul class="nav__list menu">
-            <li class="menu__item">
-              <a class="menu__link menu__link--index menu__link--current" href="index.html">Главная</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link menu__link--index" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link menu__link--index" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
+          <div class="nav__container">
+            <ul class="nav__list menu">
+              <li class="menu__item">
+                <a class="menu__link menu__link--index menu__link--current" href="index.html">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--index" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--index" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
 
@@ -89,65 +89,76 @@
               <p class="step-list__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="step-list__item">
-              <p class="step-list__text">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
+              <p class="step-list__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             </li>
           </ol>
         </div>
       </section>
 
+
       <section class="example">
-        <div class="example__container container">
-          <div class="example__inside">
+        <div class="example__wrapper content-wrapper">
+          <div class="example__text">
             <h2 class="example__title">Живой пример</h2>
-            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="example__wrapper">
-              <ul class="result-list">
-                <li class="result-list__item">
-                  <p class="result-list__title">5 кг</p>
-                  <p class="result-list__description">Снижение веса</p>
-                </li>
-                <li class="result-list__item">
-                  <p class="result-list__title">60 дней</p>
-                  <p class="result-list__description">Затрачено времени</p>
-                </li>
-              </ul>
-              <p class="example__text"><span class="example__text-position">Затраты на питание:</span> 15 000 руб.</p>
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+              Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+              по 16 часов в день.</p>
+            <div class="example__statistic-wrapper">
+              <dl class="example__statistic stats">
+                <div class="stats__item">
+                  <dt class="stats__title">
+                    <span class="stats__title-text">Снижение веса</span>
+                  </dt>
+                  <dd class="stats__index">5 кг</dd>
+                </div>
+                <div class="stats__item">
+                  <dt class="stats__title">
+                    <span class="stats__title-text">Затрачено времени</span>
+                  </dt>
+                  <dd class="stats__index">60 дней</dd>
+                </div>
+              </dl>
+              <p class="example__expenses">Затраты на питание:
+                <span class="example__expenses-index">15 000 руб.</span>
+              </p>
             </div>
           </div>
-
-          <div class="comparison">
-            <div class="comparison__wrapper-img">
-              <picture>
-                <source type="image/png" media="(min-width: 768px)" srcset="images/before-tablet@1x.png 1x, images/before-tablet@2x.png 2x" width="560" height="512">
-                <img class="comparison__img comparison__img--before comparison__img--current" src="images/before-mobile@1x.png" srcset="images/before-mobile@2x.png 2x" width="280" height="256" alt="Толстый пушистый кот до похудения">
-              </picture>
-              <picture>
-                <source type="image/png" media="(min-width: 768px)" srcset="images/after-tablet@1x.png 1x, images/after-tablet@2x.png 2x" width="560" height="512">
-                <img class="comparison__img comparison__img--after" src="images/after-tablet@1x.png" srcset="images/after-mobile@2x.png 2x" width="280" height="256" alt="Стройный гладкошёрстный кот после похудения">
-              </picture>
-            </div>
-            <div class="comparison__control controls">
-              <button class="controls__button" type="button">Было</button>
-              <div class="controls__range">
-                <div class="controls__slider"></div>
+          <div class="example__slider slider">
+            <div class="example__slider-images slider__images">
+              <div class="slider__images-wrapper slider__images-wrapper--before" style="width: 50%">
+                <picture class="slider__picture">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/before-tablet@1x.png 1x, images/before-tablet@2x.png 2x" width="560" height="512">
+                  <img class="example__image slider__image" src="images/before-mobile@1x.png" srcset="images/before-mobile@2x.png 2x" width="280" height="256" alt="Толстый пушистый кот до похудения">
+                </picture>
               </div>
-              <button class="controls__button" type="button">Стало</button>
+              <div class="slider__images-wrapper slider__images-wrapper--after">
+                <picture class="slider__picture">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/after-tablet@1x.png 1x, images/after-tablet@2x.png 2x" width="560" height="512">
+                  <img class="example__image slider__image" src="images/after-tablet@1x.png" srcset="images/after-mobile@2x.png 2x" width="280" height="256" alt="Стройный гладкошёрстный кот после похудения">
+                </picture>
+              </div>
             </div>
+            <button class="slider__button" type="button" style="left: 50%;">
+              <span class="visually-hidden">Потяните ползунок, чтобы увидеть результат изменения кота</span>
+            </button>
           </div>
         </div>
       </section>
+
 
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <div class="contacts__wrapper">
           <div class="contacts__address address">
             <div class="address__container container">
-              <p class="address__title">Приглашаем к сотрудничеству дилеров!</p>
-              <address class="address__text"><span class="address__text-wrap">ул. Большая Конюшенная, д. 19/8</span> Санкт-Петербург</address>
+              <p class="address__title">Приглашаем <br> к сотрудничеству<br> дилеров!</p>
+              <address class="address__text"><span class="address__text-wrap">ул. Большая<br> Конюшенная, д. 19/8</span> Санкт-Петербург</address>
             </div>
           </div>
         </div>
-        <div class="contacts__map"></div>
+        <div class="contacts__map">
+          <div class="map-google"></div>
+        </div>
       </section>
     </main>
 

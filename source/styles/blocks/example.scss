@@ -1,109 +1,179 @@
-.example__title {
-  margin-top: 0;
-  margin-bottom: 33px;
-  padding-top: 27px;
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 40px;
+.example {
+  padding-top: 25px;
+  background-color: $color-example-grey;
 
   @media (min-width: $tablet) {
-    margin-bottom: 63px;
-    padding-top: 43px;
-    font-size: 60px;
-    line-height: 60px;
+    padding-top: 45px;
+    background-color: transparent;
+    border-top: 1px solid $color-grey-border;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 57px;
-    margin-bottom: 146px;
+    padding-top: 0;
+    background-image: linear-gradient(180deg, $color-white 190px, transparent 190px), linear-gradient(90deg, $color-grey 50%, $color-grey 50%);
+    border-top: none;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.example__text {
+  font-family: $secondary-font;
+  padding-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 66px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 58px;
+    width: 450px;
+  }
+}
+
+.example__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  margin-bottom: 40px;
+  margin-top: 7px;
+
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 60px;
+    margin-bottom: 144px;
   }
 }
 
 .example__description {
-  margin-top: 0;
-  margin-bottom: 25px;
-  color: $color-special-dark-grey;
   font-family: $primary-font;
+  color: $color-special-dark-grey;
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
 
   @media (min-width: $tablet) {
-    margin-bottom: 54px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 69px;
-    max-width: 436px;
+    width: 96%;
   }
 }
 
-.example__text {
+.example__statistic-wrapper {
+  padding-top: 20px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 56px;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    padding-top: 69px;
+    width: 380px;
+  }
+}
+
+.example__statistic {
   margin: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 60px;
+  }
+}
+
+.example__expenses {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
 
   @media (min-width: $tablet) {
-    width: 174px;
+    display: flex;
+    flex-direction: column;
     font-size: 20px;
+    line-height: 20px;
+
+    margin-top: 12px;
+    margin-bottom: 8px;
+    max-width: 180px;
     text-align: right;
   }
 
   @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 340px;
+    text-align: left;
+  }
+}
+
+.example__expenses-index {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
     font-size: 20px;
-    width: auto;
-  }
-}
-
-.example {
-  background-color: $color-example-grey;
-
-  @media (min-width: $tablet) {
-    background-color: $color-white;
+    line-height: 20px;
+    margin-top: 8px;
   }
 
   @media (min-width: $desktop) {
-    background-image: linear-gradient($color-white 191px, transparent 191px), linear-gradient(to right, $color-grey 70%, $color-example-grey 70%);
+    margin-top: 0;
+    margin-right: 13px;
   }
 }
 
-.example__container {
+.example__slider {
+  margin: 0 auto;
+
   @media (min-width: $desktop) {
-    display: flex;
-    justify-content: space-between;
+    margin-right: -40px;
   }
 }
 
-.example__wrapper {
-  margin-bottom: 42px;
+.example__slider-images {
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: calc(50vw - var(--content-width-tablet)/2);
+      left: calc((50vw - var(--content-width-tablet)/2) * -1);
+      background-image: linear-gradient(180deg, $color-white 150px, $color-example-grey 150px);
+    }
 
-  @media (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 80px;
-  }
-
-  @media (min-width: $desktop) {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 75px;
-  }
-}
-
-.example__text-position {
-  @media (min-width: $tablet) {
-    display: inline-block;
-    margin-bottom: 9px;
-  }
-
-  @media (min-width: $desktop) {
-    margin-bottom: 0;
-    margin-right: 58px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: calc(50vw - var(--content-width-tablet)/2);
+      right: calc((50vw - var(--content-width-tablet)/2) * -1);
+      background-image: linear-gradient(180deg, $color-white 150px, $color-example-grey 150px);
+    }
   }
 }

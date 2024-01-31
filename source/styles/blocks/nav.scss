@@ -16,6 +16,7 @@
 
 .nav__button {
   position: absolute;
+  width: 24px;
   padding: 0;
   background-color: $color-white;
   border: none;
@@ -30,7 +31,7 @@
   right: 0;
   width: 24px;
   height: 16px;
-  background-image: url("../../images/icons/stack.svg#close");
+  background-image: url("../../images/icons/stack.svg#open");
   background-repeat: no-repeat;
   background-size: 24px 16px;
 }
@@ -40,7 +41,7 @@
   right: 3px;
   width: 18px;
   height: 18px;
-  background-image: url("../../images/icons/stack.svg#open");
+  background-image: url("../../images/icons/stack.svg#close");
   background-repeat: no-repeat;
   background-size: 18px 18px;
 }
@@ -67,7 +68,31 @@
   }
 }
 
+/*
 .nav--no-js .nav__button {
+  @media (max-width: $mobile-only) {
+    display: none;
+  }
+}*/
+
+.nav__list {
+  @media (max-width: $mobile-only) {
+    display: flex;
+    width: 100%;
+    background-color: $color-white;
+    z-index: 4;
+    position: absolute;
+  }
+}
+
+.nav__container {
+  @media (max-width: $mobile-only) {
+    margin: 0 -20px 0 -20px;
+    position: relative;
+  }
+}
+
+.nav__container--close {
   @media (max-width: $mobile-only) {
     display: none;
   }
