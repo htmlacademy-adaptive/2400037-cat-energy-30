@@ -196,7 +196,7 @@
     line-height: 30px;
   }
 
-  &:invalid {
+  &:user-invalid {
     border: 1px solid $color-invalid;
     box-shadow: 0 0 0 1px $color-invalid;
   }
