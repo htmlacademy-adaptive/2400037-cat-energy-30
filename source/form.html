@@ -7,6 +7,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/Oswald-Regular.woff2" as="font" crossorigin="anonymous">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
@@ -15,7 +17,7 @@
     <header class="page-header page-header--border">
       <div class="container">
         <h1 class="visually-hidden">Интернет-магазин питания для кошечек Кэт энерджи</h1>
-        <nav class="nav nav--close nav--no-js">
+        <nav class="nav nav--open nav--no-js">
           <button class="nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <a class="logo" href="#">
             <picture>
@@ -28,7 +30,7 @@
               <img class="logo__text" src="images/logo-text.svg" width="101" height="18" alt="Cat Energy.">
             </picture>
           </a>
-          <div class="nav__container nav__container--close">
+          <nav class="nav__container">
             <ul class="nav__list menu">
               <li class="menu__item">
                 <a class="menu__link" href="index.html">Главная</a>
@@ -40,7 +42,7 @@
                 <a class="menu__link menu__link--current" href="form.html">Подбор программы</a>
               </li>
             </ul>
-          </div>
+          </nav>
         </nav>
       </div>
     </header>
@@ -100,7 +102,7 @@
               <li class="form__item form__item--email">
                 <label class="form__label form__label--email" for="email">E-mail:*
                   <input class="form__input-email" type="email" name="email" id="email" placeholder="кuklachev@gmail.com" required>
-                  <svg class="form__icon-email" aria-hidden="true" focusable="false" width="20" height="15">
+                  <svg class="form__icon-email" aria-hidden="true" focusable="false" width="20" height="20">
                     <use href="images/icons/stack.svg#icon-email"></use>
                   </svg>
                 </label>

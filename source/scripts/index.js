@@ -1,5 +1,3 @@
-/* в этот файл добавляет скрипты*/
-
 // НАВИГАЦИЯ ШАПКИ(mobile burger menu)
 const navButton = document.querySelector('.nav__button');
 const navMain = document.querySelector('.nav');
@@ -14,4 +12,3 @@ navButton.addEventListener('click', () => {
     navMain.classList.add('nav--open');
   }
 });
-

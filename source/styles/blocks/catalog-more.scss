@@ -1,0 +1,88 @@
+.catalog-more__btn {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-more {
+  grid-template-columns: 1fr;
+  padding: 25px 0;
+
+  @media (min-width: $tablet) {
+    background: #ffffff;
+    border: 2px solid #f2f2f2;
+    padding: 50px 35px 40px;
+    margin-top: 70px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 49px 35px 37px;
+  }
+}
+
+.catalog-more::before {
+  content: "";
+  display: block;
+  background-image: url("../../images/icons/plus.svg");
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet) {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 48px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 38px;
+  }
+}
+
+.catalog-more__title {
+  font-family: $secondary-font;
+  font-weight: 400;
+  min-width: 204px;
+  margin-bottom: 8px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 21px;
+    padding: 0 20px;
+    min-width: 135px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 23px;
+    min-width: 135px;
+  }
+}
+
+.catalog-more__text {
+  font-family: $primary-font;
+  font-weight: 400;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 79px;
+    text-align: center;
+    padding: 0 25px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+    margin-bottom: 88px;
+  }
+}
+
+.catalog-more__btn {
+  @media (min-width: $tablet) {
+    padding: 10px 78px;
+    font-size: inherit;
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 10px 40px;
+  }
+}

@@ -1,6 +1,6 @@
 .promo {
   position: relative;
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
@@ -71,7 +71,7 @@
   @media (min-width: $tablet) {
     margin-left: 87px;
     margin-bottom: 40px;
-    padding-top: 62px;
+    padding-top: 67px;
     font-size: 60px;
     line-height: 60px;
     color: $color-black;
@@ -124,19 +124,20 @@
     left: 558px;
     width: 552px;
     height: 499px;
+    z-index: -1;
   }
 }
 
 .promo__button {
   padding-top: 11px;
   padding-bottom: 11px;
-  margin-top: -12px;
+  margin-top: 4px;
   font-size: 16px;
   line-height: 20px;
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: 305px;
+    top: 290px;
     left: 120px;
     padding-top: 17px;
     padding-bottom: 17px;
@@ -146,7 +147,7 @@
   }
 
   @media (min-width: $desktop) {
-    top: 355px;
+    top: 340px;
     left: 190px;
   }
 }
