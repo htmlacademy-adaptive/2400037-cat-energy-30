@@ -101,13 +101,16 @@
     border: 1px solid $color-grey-footer;
     background-image: url("../../images/thumb.svg");
     border-radius: 50%;
+    color: $color-grey-footer;
   }
 
   &:hover {
     background-color: $color-basic-green;
 
     &::before {
-      border: 2px solid $color-basic-green;
+      border: 1px solid $color-basic-green;
+      background-image: url("../../images/thumb-hover.svg");
+      border-radius: 50%;
     }
 
     &::after {
@@ -120,7 +123,7 @@
     opacity: 0.6;
 
     &::before {
-      border: 2px solid $color-basic-green;
+      border: 1px solid $color-basic-green;
     }
 
     &::after {
@@ -148,7 +151,7 @@
     height: 512px;
 
     &::before {
-      left: -16px;
+      left: -18px;
     }
 
     &::after {

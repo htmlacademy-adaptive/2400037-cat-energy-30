@@ -2,7 +2,8 @@
   list-style: none;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 23px;
   align-items: center;
   width: 130px;
   margin: 0 auto;

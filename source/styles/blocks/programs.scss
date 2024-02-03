@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet) {
     row-gap: 30px;
-    margin-bottom: 42px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: $desktop) {
@@ -33,6 +33,7 @@
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
+  font-weight: 400;
   text-transform: uppercase;
 
   @media (min-width: $tablet) {
@@ -214,7 +215,7 @@
     left: 100px;
     width: 32px;
     height: 10px;
-    background-image: url("../../images/icons/stack.svg#icon-arrow");
+    background-image: url("../../images/icons/icon-arrow.svg");
     background-repeat: no-repeat;
     background-size: 32px 10px;
 
@@ -227,5 +228,13 @@
   &:active::before,
   &:active {
     opacity: 0.3;
+  }
+}
+
+.programs__link:hover {
+  &::before {
+    background-image: url("../../images/icons/icon-arrow-hover.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 10px;
   }
 }

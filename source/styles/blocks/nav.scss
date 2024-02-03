@@ -1,12 +1,12 @@
 .nav {
   position: relative;
-  padding-top: 12px;
+  padding-top: 13px;
 
   @media (min-width: $tablet) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 24px;
+    padding-top: 21px;
   }
 
   @media (min-width: $desktop) {
@@ -27,7 +27,7 @@
 }
 
 .nav--close .nav__button {
-  top: 25px;
+  top: 24px;
   right: 0;
   width: 24px;
   height: 16px;
@@ -37,7 +37,7 @@
 }
 
 .nav--open .nav__button {
-  top: 23px;
+  top: 24px;
   right: 3px;
   width: 18px;
   height: 18px;
@@ -68,12 +68,11 @@
   }
 }
 
-/*
 .nav--no-js .nav__button {
   @media (max-width: $mobile-only) {
     display: none;
   }
-}*/
+}
 
 .nav__list {
   @media (max-width: $mobile-only) {
